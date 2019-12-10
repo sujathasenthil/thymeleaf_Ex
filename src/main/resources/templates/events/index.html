@@ -7,13 +7,14 @@
 <!--        <li th:text="${event.key}${event.value}"></li>-->
 <!--    </th:block>-->
     <th:block>
-        <table>
-    <tr><th>Event</th><th>Description</th></tr>
+     <table>
+    <tr><th>Event</th><th>Description</th><th>Address</th></tr>
     <tr th:each="event: ${events}">
         <td th:text="${event.key}"></td>
         <td th:text="${event.value}"></td>
+        <td th:replace = "fragments :: address"></td>
     </tr>
-        </table>
+     </table>
     </th:block>
 </body>
 </html>

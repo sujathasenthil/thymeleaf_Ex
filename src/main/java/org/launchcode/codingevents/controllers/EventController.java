@@ -28,11 +28,8 @@ public class EventController {
 //        model.addAttribute("events", events);
 //        return "events/index";
     events.put("World Wide Technology-Hour of code", "1-hour introduction to computer science, designed to demystify code, to show that anybody can do it! ");
-    events.put("Coding Skills: Getting Started with Swift Playgrounds","Wed, Dec 11, 7 – 8 PM\n" +
-            "Apple West County, 131 W County Center\n" +
-            "St. Louis, MO");
-    events.put("Coding Lab for Kids: Sphero Robot Obstacle Challenge","Tue, Dec 24, 4:30 – 5:30 PM,Apple West County, 131 W County Center\n" +
-            "St. Louis, MO");
+    events.put("Coding Skills", "Getting Started with Swift Playgrounds, Wed, Dec 11, 7 – 8 PM");
+    events.put("Coding Lab for Kids","Sphero Robot Obstacle Challenge, Tue, Dec 24, 4:30 – 5:30 PM");
     model.addAttribute("events",events);
     return "events/index";
     }
